@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>St Scholastica School Kimumu</title>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                <div class="logo-icon">✟</div>
+                <div class="logo-text">
+                    <h1>St Scholastica School Kimumu</h1>
+                    <p>Faith • Knowledge • Service</p>
+                </div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#programs">Programs</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="slider-container" id="home">
+        <div class="slider">
+            <div class="slide">
+                <div style="width: 100%;">
+                    <img src="/images/IMG-20250929-WA0026.jpg" alt="">
+                </div>
+                <div class="slide-content">
+                    <h2>St Scholastica School Kimumu</h2>
+                    <p>Nurturing Hearts and Minds in Christ</p>
+                </div>
+            </div>
+            <div class="slide">
+                <div style="width: 100%;">
+                    <img src="/images/IMG-20250929-WA0025.jpg" alt="">
+                </div>
+                <div class="slide-content">
+                    <h2>Excellence in Education</h2>
+                    <p>Building Strong Foundations for the Future</p>
+                </div>
+            </div>
+            <div class="slide">
+                <div style="width: 100%;">
+                    <img src="/images/IMG-20250929-WA0027.jpg" alt="">
+                </div>
+                <div class="slide-content">
+                    <h2>Faith-Based Learning</h2>
+                    <p>Guided by Catholic Values and Traditions</p>
+                </div>
+            </div>
+        </div>
+        <button class="slider-btn prev" onclick="changeSlide(-1)">❮</button>
+        <button class="slider-btn next" onclick="changeSlide(1)">❯</button>
+        <div class="dots">
+            <span class="dot active" onclick="currentSlide(0)"></span>
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+        </div>
+    </div>
+
+    <section class="container" id="programs">
+        <h2 class="section-title">Our Programs</h2>
+        <div class="features">
+            <div class="feature-card">
+                <div class="feature-icon">📚</div>
+                <h3>Academic Excellence</h3>
+                <p>Rigorous curriculum aligned with state standards and Catholic teachings.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🙏</div>
+                <h3>Spiritual Formation</h3>
+                <p>Daily prayer, Mass, and sacramental preparation integrated into school life.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">⚽</div>
+                <h3>Sports & Activities</h3>
+                <p>Comprehensive athletics and extracurricular programs for all students.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🎨</div>
+                <h3>Arts Program</h3>
+                <p>Music, drama, and visual arts to nurture creative expression.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🤝</div>
+                <h3>Community Service</h3>
+                <p>Teaching compassion through service to others and the community.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">👨‍👩‍👧‍👦</div>
+                <h3>Family Partnership</h3>
+                <p>Working together with families to support each child's growth.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="container">
+            <h2 class="section-title">About Our School</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Our Mission</h3>
+                    <p>St. St Scholastica School Kimumu Catholic School provides a Christ-centered education that nurtures the spiritual, intellectual, emotional, and physical development of each student. We are committed to academic excellence within a faith-filled community.</p>
+                    <p>Founded in 1965, our school has served families in the community for over 50 years. We maintain small class sizes to ensure personalized attention and foster a warm, welcoming environment where every student feels valued.</p>
+                    <p>Our dedicated faculty and staff work in partnership with parents to help each child reach their God-given potential while developing strong moral character and a lasting relationship with Jesus Christ.</p>
+                </div>
+                <div class="about-image">
+                    ✟
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="section-title" style="color: white;">Contact Us</h2>
+            <form class="contact-form" id="contactForm">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 St Scholastica School Kimumu. All rights reserved.</p>
+    </footer>
+   <script src="script.js"></script>
+</body>
+</html>
